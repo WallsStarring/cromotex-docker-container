@@ -1,0 +1,10 @@
+version: '3'
+services:
+  website:
+    container_name: cromotex-web
+    restart: always
+    build: ./apache
+    ports:
+      - "81:80"
+    volumes: 
+      - ./proyect:/var/www/html/website
